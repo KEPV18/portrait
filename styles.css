@@ -1,0 +1,277 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+#top-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#top-bar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#site-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#site-header h1 {
+  font-size: 36px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Search */
+#search {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#search input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Slider */
+#slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+/* Featured Products */
+.featured-products {
+  margin-top: 40px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-box {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.product {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.product h3,
+.product p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.product a {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.product a:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* ستايلات لقسم New Arrivals */
+#new-arrivals {
+  margin-top: 50px;
+}
+
+#new-arrivals .section-title {
+  text-align: center;
+}
+
+#new-arrivals .product-box {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+#new-arrivals .product {
+  flex: 0 0 auto;
+  margin: 0 10px;
+  scroll-snap-align: start;
+  min-width: 250px; /* أو أي عرض مناسب */
+}
+
+#new-arrivals .product img {
+  width: 100%;
+  height: auto;
+}
+
+#new-arrivals button {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* نسق السلايدر الأفقي */
+#new-arrivals .product-box {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* تحديد السلايدز داخل السلايدر */
+#new-arrivals .featured-slide {
+  scroll-snap-align: center;
+}
+
+
+/* تكبير حجم بطاقات New Arrivals و Featured Products */
+.product-box .product {
+  width: 18%;
+  margin: 10px;
+}
+
+/* ضبط عرض العنصر الأب لعرض 5 بطاقات فقط */
+#new-arrivals .product-box,
+#featured-products .product-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* إخفاء أزرار التنقل لسلايدر New Arrivals */
+#nextNewArrivalsBtn,
+#prevNewArrivalsBtn,
+#nextFeaturedBtn,
+#prevFeaturedBtn {
+  display: none;
+}
+
+
+.slide {
+  width: 700px; /* عرض ثابت للصور */
+  height: 300px; /* ارتفاع ثابت للصور */
+}
+.slide {
+  display: block; /* تأكيد أن الصور تظهر كبلوك */
+  margin: 0 auto; /* لوضع الصور في منتصف الصفحة */
+}
+
