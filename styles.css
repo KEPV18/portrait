@@ -26,7 +26,7 @@ body {
 }
 
 #top-bar button {
-  background-color: #007bff;
+  background-color: rgb(221, 66, 143);
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -36,7 +36,7 @@ body {
 }
 
 #site-header {
-  background-color: #007bff;
+  background-color: rgb(221, 66, 143);
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -194,52 +194,7 @@ footer ul li a {
 
 
 /* ستايلات لقسم New Arrivals */
-#new-arrivals {
-  margin-top: 50px;
-}
-
-#new-arrivals .section-title {
-  text-align: center;
-}
-
-#new-arrivals .product-box {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-
-#new-arrivals .product {
-  flex: 0 0 auto;
-  margin: 0 10px;
-  scroll-snap-align: start;
-  min-width: 250px; /* أو أي عرض مناسب */
-}
-
-#new-arrivals .product img {
-  width: 100%;
-  height: auto;
-}
-
-#new-arrivals button {
-  display: block;
-  margin: 20px auto;
-  font-size: 24px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-/* نسق السلايدر الأفقي */
-#new-arrivals .product-box {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-/* تحديد السلايدز داخل السلايدر */
-#new-arrivals .featured-slide {
-  scroll-snap-align: center;
-}
+ 
 
 
 /* تكبير حجم بطاقات New Arrivals و Featured Products */
@@ -249,13 +204,6 @@ footer ul li a {
 }
 
 /* ضبط عرض العنصر الأب لعرض 5 بطاقات فقط */
-#new-arrivals .product-box,
-#featured-products .product-box {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 /* إخفاء أزرار التنقل لسلايدر New Arrivals */
 #nextNewArrivalsBtn,
@@ -303,4 +251,36 @@ footer ul li a {
   height: 50px;
   display: block;
   margin: 0 auto 10px;
+}
+
+.category-link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.category-link:hover {
+  color: #555;
+}
+
+
+.category a:link, a:visited {
+  background-color: rgb(221, 66, 143);
+  color: rgb(255, 255, 255);
+  border: 2px solid ;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.category a:hover, a:active {
+  background-color: rgb(20, 118, 184);
+  color: white;
+}
+
+footer a {
+  color: #ff0000; /* لون الرابط الأحمر */
+  text-decoration: none; /* إزالة التزيين الافتراضي */
 }

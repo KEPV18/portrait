@@ -49,7 +49,7 @@ $(document).ready(function() {
     showFeaturedSlide(currentIndexFeatured);
   });
 
-  // توقف التحرك التلقائي للسلايدر الثاني
+  // توقف التحرك التلقائي للسلايدر Featured Products
   $('#featured-products').hover(function() {
     clearInterval(intervalId2);
   }, function() {
@@ -58,80 +58,4 @@ $(document).ready(function() {
       showFeaturedSlide(currentIndexFeatured);
     }, 3000);
   });
-
-  // سلايدر New Arrivals
-  $('#new-arrivals .product-box').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-
-  
-  // سلايدر New Arrivals
-  $('#new-arrivals .product-box').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
-  });
-
-  // إخفاء أزرار التنقل لسلايدر New Arrivals
-  $('#new-arrivals .slick-arrow').css('display', 'none');
 });
