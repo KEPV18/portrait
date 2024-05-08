@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 #search button {
-  background-color: #007bff;
+  background-color: #8b0d57;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -159,7 +159,7 @@ nav ul li a {
 .product a {
   display: block;
   text-align: center;
-  background-color: #007bff;
+  background-color: rgb(221, 66, 143);
   color: #fff;
   padding: 5px 0;
   border-radius: 5px;
@@ -167,7 +167,7 @@ nav ul li a {
 }
 
 .product a:hover {
-  background-color: #0056b3;
+  background-color: rgb(235, 132, 183);
 }
 
 /* Footer */
