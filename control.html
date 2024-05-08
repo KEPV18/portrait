@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gifts for Men Control Panel</title>
+    <title>Dashboard Control Panel</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -31,7 +31,8 @@
         }
         input[type="text"],
         textarea,
-        input[type="file"] {
+        input[type="file"],
+        select {
             width: 100%;
             padding: 8px;
             margin-bottom: 10px;
@@ -56,7 +57,7 @@
     </style>
 </head>
 <body>
-    <h1>Gifts for Men Control Panel</h1>
+    <h1>Dashboard Control Panel</h1>
     
     <!-- لوحة التحكم -->
     <form id="menProductForm">
@@ -71,6 +72,17 @@
 
         <label for="productImage">صورة المنتج:</label>
         <input type="file" id="productImage" name="productImage">
+
+        <label for="productCategory">اختر القسم:</label>
+        <select id="productCategory" name="productCategory">
+            <option value="Men">Gifts for Men</option>
+            <option value="Women">Gifts for Women</option>
+            <option value="Kids">Gifts for Kids</option>
+            <option value="Mugs">Ceramic Mugs</option>
+            <option value="Decor">Decor</option>
+            <option value="Notebooks">Notebooks</option>
+            <option value="Toys">Toys</option>
+        </select>
 
         <button type="submit">أضف المنتج</button>
     </form>
