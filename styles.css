@@ -86,11 +86,14 @@ nav ul li a {
 #slider {
   position: relative;
   overflow: hidden;
+  text-align: center; /* تأكد من توسيط المحتويات أفقياً */
 }
 
 .slide {
-  display: none;
-  width: 100%;
+  display: none; /* تعديل هنا لجعل جميع الصور مخفية بشكل افتراضي */
+  width: 700px; /* عرض ثابت للصور */
+  height: 300px; /* ارتفاع ثابت للصور */
+  margin: 0 auto; /* لوضع الصور في منتصف الصفحة أفقياً */
 }
 
 .slide:first-child {
@@ -214,15 +217,6 @@ footer ul li a {
 }
 
 
-.slide {
-  width: 700px; /* عرض ثابت للصور */
-  height: 300px; /* ارتفاع ثابت للصور */
-}
-.slide {
-  display: block; /* تأكيد أن الصور تظهر كبلوك */
-  margin: 0 auto; /* لوضع الصور في منتصف الصفحة */
-}
-
 /* CSS تنسيق */
 #categories {
   text-align: center;
@@ -283,4 +277,6 @@ footer ul li a {
 footer a {
   color: #ff0000; /* لون الرابط الأحمر */
   text-decoration: none; /* إزالة التزيين الافتراضي */
+}
+}
 }
