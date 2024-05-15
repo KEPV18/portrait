@@ -61,3 +61,24 @@ $(document).ready(function() {
     }, 3000);
   });
 });
+
+
+$(document).ready(function() {
+  // سرعة الاسكرول
+  var scrollSpeed = 50; // يمكنك تغيير هذه القيمة حسب الحاجة
+
+  // الاسكرول بالماوس من الأعلى للأسفل
+  $(document).on('mousewheel', function(event) {
+    if (event.originalEvent.deltaY > 0) {
+      // اتجاه أسفل
+      $('html, body').stop().animate({
+        scrollTop: '+=100'
+      }, scrollSpeed);
+    } else {
+      // اتجاه أعلى
+      $('html, body').stop().animate({
+        scrollTop: '-=100'
+      }, scrollSpeed);
+    }
+  });
+});
