@@ -82,3 +82,22 @@ $(document).ready(function() {
     }
   });
 });
+
+
+$(document).ready(function() {
+  var scrollSpeed = 50;
+
+  $(document).on('mousewheel', function(event) {
+    if (event.originalEvent.deltaY > 0) {
+      // اتجاه أسفل
+      $('html, body').stop().animate({
+        scrollTop: '+=100'
+      }, scrollSpeed);
+    } else {
+      // اتجاه أعلى
+      $('html, body').stop().animate({
+        scrollTop: '-=100'
+      }, scrollSpeed);
+    }
+  });
+});
