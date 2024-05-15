@@ -3,6 +3,7 @@ $(document).ready(function() {
   var currentIndex = 0;
   var slides = $('.slide');
   var totalSlides = slides.length;
+  var intervalId1; // تعريف المتغير intervalId1
 
   function showSlide(index) {
     slides.hide();
@@ -33,6 +34,7 @@ $(document).ready(function() {
   var currentIndexFeatured = 0;
   var featuredSlides = $('.featured-slide');
   var totalFeaturedSlides = featuredSlides.length;
+  var intervalId2; // تعريف المتغير intervalId2
 
   function showFeaturedSlide(index) {
     featuredSlides.hide();
